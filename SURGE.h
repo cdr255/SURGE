@@ -11,8 +11,13 @@
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_ttf.h>
 
+// VARIABLES
+
+// This is the window of SURGE.
+SDL_Surface * screen = NULL;
+
 // Declare the Initialization function
-bool init();
+bool SURGE_init();
 
 // LazyFoo's Function for loading optimized images.
 
