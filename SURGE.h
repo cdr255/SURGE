@@ -9,8 +9,10 @@
 #include <string>
 #include <SDL/SDL.h>
 #include <SDL/SDL_image.h>
+#include <SDL/SDL_ttf.h>
 
-
+// Declare the Initialization function
+bool init();
 
 // LazyFoo's Function for loading optimized images.
 
