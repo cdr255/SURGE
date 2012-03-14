@@ -65,7 +65,7 @@ SDL_Surface * lf_load_image( std::string filename ) {
 
 // LazyFoo's Function for blitting.
 
-void lf_apply_surface( int x, int y, SDL_Surface * source, SDL_Surface * destination ) {
+void lf_apply_surface( int x, int y, SDL_Surface * source, SDL_Surface * destination, SDL_Rect * clip = NULL ) {
 
 	// Throwaway Rectangle to hold any offsets
 	SDL_Rect offset;
@@ -75,7 +75,7 @@ void lf_apply_surface( int x, int y, SDL_Surface * source, SDL_Surface * destina
 	offset.y = y;
 
 	// Actually Blit the Surfaces
-	SDL_BlitSurface( source, NULL, destination, &offset );
+	SDL_BlitSurface( source, clip, destination, &offset );
 }
 
 
